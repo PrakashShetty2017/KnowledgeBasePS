@@ -73,10 +73,11 @@
     <Content Include="content\Images\Header-Banner.jpg" />
     <Content Include="content\Images\Retweet-Icon.jpg" />
     <Content Include="content\Images\Search.png" />
+    <Content Include="content\Main.css" />
     <Content Include="Home.aspx" />
     <Content Include="js\jquery-1.7.2.min.js" />
     <Content Include="js\twitter-text.js" />
-    <Content Include="Twitter-core.css" />
+    <Content Include="content\Twitter-core.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

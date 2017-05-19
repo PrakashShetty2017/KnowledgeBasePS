@@ -1,0 +1,38 @@
+﻿        .TweetText {
+            font-size: 14px;
+            line-height: 20px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            padding-left: 20%;
+        }
+        .tweet-text-container {
+            left: 10%;
+        }
+        .time {
+            font-size: 10px;
+            font-style: oblique;
+        }
+
+        .stream-Item-Footer {
+            padding-left: 20%;
+        }
+        .MainDiv {
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 1%;
+            width: 30%;
+            text-align:left;
+        }
+        .AdaptiveMedia-container {
+            padding-left: 20%;
+        }
+        .LeftDiv {
+            padding-left: 80%; 
+            padding-right: 80%;
+            background-image: url("/content/Images/Header-Banner.jpg");
+            width: 20%;
+        }
+        .RightDiv { 
+            padding-left: 60%; 
+            padding-top: 5%;
+        }

@@ -6,46 +6,10 @@
 <head runat="server">
   <meta http-equiv="Refresh" content="60" />
   <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
-    <link href="Twitter-core.css" rel="stylesheet" type="text/css" />
-    <title></title>
-   <style>
-        .TweetText {
-            font-size: 14px;
-            line-height: 20px;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-            padding-left: 20%;
-        }
-        .tweet-text-container {
-            left: 10%;
-        }
-        .time {
-            font-size: 10px;
-            font-style: oblique;
-        }
-        .stream-Item-Footer {
-            padding-left: 20%;
-        }
-        .MainDiv {
-            padding-left: 20%;
-            padding-right: 20%;
-            padding-top: 1%;
-            width: 30%;
-        }
-        .AdaptiveMedia-container {
-            padding-left: 20%;
-        }
-        .LeftDiv {
-            padding-left: 80%; 
-            padding-right: 80%;
-            background-image: url("/content/Images/Header-Banner.jpg");
-            width: 20%;
-        }
-        .RightDiv { 
-            padding-left: 60%; 
-            padding-top: 5%;
-        }
-    </style>
+    <link href="content/Twitter-core.css" rel="stylesheet" type="text/css" />
+    <link href="content/Main.css" rel="stylesheet" type="text/css" />
+    <title>Tweed Feed</title>
+
     <script type="text/javascript">
 
       function CheckSearchValExist(searchVal, searchText) {
@@ -94,23 +58,31 @@
           return false;
       }
       function bindTweets(result) {
-
-                var json = $.parseJSON(result);
-                for (var i = 0; i < json.length; i++) {
+          // Generates Tweet HTML
+          // Tweeter CSS classes are used
+          var json = $.parseJSON(result);
+                // Loop through every tweet content
+          for (var i = 0; i < json.length; i++) {
+                    // Check if search text has a value, if so then compare with tweet content
                     if (CheckSearchValExist(document.getElementById('txtSearch').value, json[i].text) == true) {
                         $("#results")
                          .append('<div class="MainDiv">'
+                         // Tweet header - Includes ProfileImage, USer Name, Screen Name and Tweet time
                         + '<div class="tweet"><a href="' + json[i].user.profile_image_url + '" ><img src="' + json[i].user.profile_image_url + '" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'                           
-                        + '<span class="FullNameGroup">'
-                        + '<strong class="fullname show-popup-with-id " data-aria-label-part="">' + json[i].user.name + '</strong>'
-                        + '<span>‏</span><span class="UserBadges"></span>'
-                        + '<span class="UserNameBreak">&nbsp;</span></span><span class="username u-dir" dir="ltr" data-aria-label-part="">@<b>' + json[i].user.screen_name + '</b></span></a>'
-                        + '<small class="time">' + json[i].created_at.substring(0, 16) + ''
-                        + '</small></div>'
+                                + '<span class="FullNameGroup">'
+                                + '<strong class="fullname show-popup-with-id " data-aria-label-part="">' + json[i].user.name + '</strong>'
+                                + '‏</span>'
+                                + '&nbsp;<span class="username u-dir" dir="ltr" data-aria-label-part="">@' + json[i].user.screen_name + '</span>'
+                                + '<small class="time">' + json[i].created_at.substring(0, 16) + ''
+                                + '</small>'
+                        + '</div>'
+                        // Tweet Content
                         + '<div class="tweet-text-container">'
-                        + '<p class="TweetText" lang="en" data-aria-label-part="0">' + json[i].text + '</p></div>'
+                                + '<p class="TweetText" lang="en" data-aria-label-part="0">' + json[i].text + '</p>'
+                        +'</div>'
                         );                    
                         try {
+                            //Display Tweet Image
                             for (var j = 0; j < json[i].entities.media.length; j++) {
                                 $("#results").append('</br><div class="AdaptiveMedia-container">'
                                     + '<div class="AdaptiveMedia-singlePhoto">'
@@ -122,10 +94,13 @@
 
                         } catch (e) {
                         }
-                        $("#results").append('<div class="stream-Item-Footer">'
+                        // Retweet Count
+                        $("#results").append('<div class="stream-Item-Footer ">'
                             + '</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;'
-                            +' <span class="ProfileTweet-actionCountForPresentation" aria-hidden="true"><img src="/content/images/Retweet-Icon.jpg" alt="" style="width: 1%; height: 1%; left: 7.5%"> ' + json[i].retweet_count + ' <span style="font-size: 10px;font-style: oblique"> Times</span></span>'
-                            + '</div></div></div></div>');
+                            +' <span class="ProfileTweet-actionCountForPresentation" aria-hidden="true">'
+                            + '<img src="/content/images/Retweet-Icon.jpg" Tooltip="Retweet Count" alt="" style="width: 1%; height: 1%; "> '
+                            +  json[i].retweet_count + ' <span style="font-size: 10px;font-style: oblique"> Times</span></span>'
+                            + '</div>');
                     }
                 }
 
@@ -136,12 +111,13 @@
     <form id="form1" runat="server">
     <asp:ScriptManager ID="sm" runat="server" EnablePageMethods="True">
     </asp:ScriptManager>
- <div id="HeaderDiv" class="LeftDiv">
-     <input  id="txtSearch" type="text" style="width: 60%; height: 30%;" />&nbsp;
-     <input name="submit" id="submitme" type="image" src="/content/Images/Search.png" style="width: 4%; height: 4%;  vertical-align: bottom" onclick="LoadTwitterFeed(); return false;"/>
-
- </div>
-  <div id="results" />
+    <div id="HeaderDiv" class="LeftDiv">
+        <!--Search controls -->
+        <input  id="txtSearch" type="text" style="width: 60%; height: 30%;" />&nbsp;
+        <input  name="submit" id="submitme" type="image" src="/content/Images/Search.png" style="width: 4%; height: 4%;  vertical-align: bottom" onclick="LoadTwitterFeed(); return false;"/>
+    </div>
+    <!-- Tweitter Feed result -->
+    <div id="results" />
     </form>
 </body>
 </html>
