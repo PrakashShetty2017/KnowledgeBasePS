@@ -70,8 +70,8 @@
         <member name="M:TwitterAPIManager.Fakes.ShimAuthenticate.Bind(TwitterAPIManager.IAuthenticate)">
             <summary>Binds the members of the interface to the shim.</summary>
         </member>
-        <member name="P:TwitterAPIManager.Fakes.ShimAuthenticate.AuthenticateConsumerIAuthenticateSettings">
-            <summary>Sets the shim of Authenticate.AuthenticateConsumer(IAuthenticateSettings authenticateSettings)</summary>
+        <member name="P:TwitterAPIManager.Fakes.ShimAuthenticate.AuthenticateConsumerAuthenticateSettings">
+            <summary>Sets the shim of Authenticate.AuthenticateConsumer(AuthenticateSettings authenticateSettings)</summary>
         </member>
         <member name="P:TwitterAPIManager.Fakes.ShimAuthenticate.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
@@ -82,8 +82,8 @@
         <member name="T:TwitterAPIManager.Fakes.ShimAuthenticate.AllInstances">
             <summary>Define shims for all instances members</summary>
         </member>
-        <member name="P:TwitterAPIManager.Fakes.ShimAuthenticate.AllInstances.AuthenticateConsumerIAuthenticateSettings">
-            <summary>Sets the shim of Authenticate.AuthenticateConsumer(IAuthenticateSettings authenticateSettings)</summary>
+        <member name="P:TwitterAPIManager.Fakes.ShimAuthenticate.AllInstances.AuthenticateConsumerAuthenticateSettings">
+            <summary>Sets the shim of Authenticate.AuthenticateConsumer(AuthenticateSettings authenticateSettings)</summary>
         </member>
         <member name="T:TwitterAPIManager.Fakes.ShimAuthenticateSettings">
             <summary>Shim type of TwitterAPIManager.AuthenticateSettings</summary>
@@ -99,9 +99,6 @@
         </member>
         <member name="M:TwitterAPIManager.Fakes.ShimAuthenticateSettings.BehaveAsNotImplemented">
             <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
-        </member>
-        <member name="M:TwitterAPIManager.Fakes.ShimAuthenticateSettings.Bind(TwitterAPIManager.IAuthenticateSettings)">
-            <summary>Binds the members of the interface to the shim.</summary>
         </member>
         <member name="P:TwitterAPIManager.Fakes.ShimAuthenticateSettings.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
@@ -169,8 +166,8 @@
         <member name="P:TwitterAPIManager.Fakes.ShimTwitterFeed.AuthenticateSettingsGet">
             <summary>Sets the shim of TwitterFeed.get_AuthenticateSettings()</summary>
         </member>
-        <member name="P:TwitterAPIManager.Fakes.ShimTwitterFeed.AuthenticateSettingsSetIAuthenticateSettings">
-            <summary>Sets the shim of TwitterFeed.set_AuthenticateSettings(IAuthenticateSettings value)</summary>
+        <member name="P:TwitterAPIManager.Fakes.ShimTwitterFeed.AuthenticateSettingsSetAuthenticateSettings">
+            <summary>Sets the shim of TwitterFeed.set_AuthenticateSettings(AuthenticateSettings value)</summary>
         </member>
         <member name="P:TwitterAPIManager.Fakes.ShimTwitterFeed.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
@@ -190,8 +187,8 @@
         <member name="P:TwitterAPIManager.Fakes.ShimTwitterFeed.AllInstances.AuthenticateSettingsGet">
             <summary>Sets the shim of TwitterFeed.get_AuthenticateSettings()</summary>
         </member>
-        <member name="P:TwitterAPIManager.Fakes.ShimTwitterFeed.AllInstances.AuthenticateSettingsSetIAuthenticateSettings">
-            <summary>Sets the shim of TwitterFeed.set_AuthenticateSettings(IAuthenticateSettings value)</summary>
+        <member name="P:TwitterAPIManager.Fakes.ShimTwitterFeed.AllInstances.AuthenticateSettingsSetAuthenticateSettings">
+            <summary>Sets the shim of TwitterFeed.set_AuthenticateSettings(AuthenticateSettings value)</summary>
         </member>
         <member name="P:TwitterAPIManager.Fakes.ShimTwitterFeed.AllInstances.GetTwitterFeed">
             <summary>Sets the shim of TwitterFeed.GetTwitterFeed()</summary>
@@ -259,53 +256,11 @@
         <member name="M:TwitterAPIManager.Fakes.StubIAuthenticate.#ctor">
             <summary>Initializes a new instance of type StubIAuthenticate</summary>
         </member>
-        <member name="F:TwitterAPIManager.Fakes.StubIAuthenticate.AuthenticateConsumerIAuthenticateSettings">
-            <summary>Sets the stub of IAuthenticate.AuthenticateConsumer(IAuthenticateSettings authenticateSettings)</summary>
+        <member name="F:TwitterAPIManager.Fakes.StubIAuthenticate.AuthenticateConsumerAuthenticateSettings">
+            <summary>Sets the stub of IAuthenticate.AuthenticateConsumer(AuthenticateSettings authenticateSettings)</summary>
         </member>
-        <member name="M:TwitterAPIManager.Fakes.StubIAuthenticate.tapim::TwitterAPIManager#IAuthenticate#AuthenticateConsumer(TwitterAPIManager.IAuthenticateSettings)">
-            <summary>Sets the stub of IAuthenticate.AuthenticateConsumer(IAuthenticateSettings authenticateSettings)</summary>
-        </member>
-        <member name="T:TwitterAPIManager.Fakes.StubIAuthenticateSettings">
-            <summary>Stub type of TwitterAPIManager.IAuthenticateSettings</summary>
-        </member>
-        <member name="M:TwitterAPIManager.Fakes.StubIAuthenticateSettings.#ctor">
-            <summary>Initializes a new instance of type StubIAuthenticateSettings</summary>
-        </member>
-        <member name="M:TwitterAPIManager.Fakes.StubIAuthenticateSettings.AttachBackingFieldToOAuthConsumerKey">
-            <summary>Attaches delegates to emulate StubIAuthenticateSettings.OAuthConsumerKey as a property with a backing field.</summary>
-        </member>
-        <member name="M:TwitterAPIManager.Fakes.StubIAuthenticateSettings.AttachBackingFieldToOAuthConsumerSecret">
-            <summary>Attaches delegates to emulate StubIAuthenticateSettings.OAuthConsumerSecret as a property with a backing field.</summary>
-        </member>
-        <member name="M:TwitterAPIManager.Fakes.StubIAuthenticateSettings.AttachBackingFieldToOAuthUrl">
-            <summary>Attaches delegates to emulate StubIAuthenticateSettings.OAuthUrl as a property with a backing field.</summary>
-        </member>
-        <member name="F:TwitterAPIManager.Fakes.StubIAuthenticateSettings.OAuthConsumerKeyGet">
-            <summary>Sets the stub of IAuthenticateSettings.get_OAuthConsumerKey()</summary>
-        </member>
-        <member name="F:TwitterAPIManager.Fakes.StubIAuthenticateSettings.OAuthConsumerKeySetString">
-            <summary>Sets the stub of IAuthenticateSettings.set_OAuthConsumerKey(String value)</summary>
-        </member>
-        <member name="F:TwitterAPIManager.Fakes.StubIAuthenticateSettings.OAuthConsumerSecretGet">
-            <summary>Sets the stub of IAuthenticateSettings.get_OAuthConsumerSecret()</summary>
-        </member>
-        <member name="F:TwitterAPIManager.Fakes.StubIAuthenticateSettings.OAuthConsumerSecretSetString">
-            <summary>Sets the stub of IAuthenticateSettings.set_OAuthConsumerSecret(String value)</summary>
-        </member>
-        <member name="F:TwitterAPIManager.Fakes.StubIAuthenticateSettings.OAuthUrlGet">
-            <summary>Sets the stub of IAuthenticateSettings.get_OAuthUrl()</summary>
-        </member>
-        <member name="F:TwitterAPIManager.Fakes.StubIAuthenticateSettings.OAuthUrlSetString">
-            <summary>Sets the stub of IAuthenticateSettings.set_OAuthUrl(String value)</summary>
-        </member>
-        <member name="P:TwitterAPIManager.Fakes.StubIAuthenticateSettings.tapim::TwitterAPIManager#IAuthenticateSettings#OAuthConsumerKey">
-            <summary>Sets the stub of IAuthenticateSettings.get_OAuthConsumerKey()</summary>
-        </member>
-        <member name="P:TwitterAPIManager.Fakes.StubIAuthenticateSettings.tapim::TwitterAPIManager#IAuthenticateSettings#OAuthConsumerSecret">
-            <summary>Sets the stub of IAuthenticateSettings.get_OAuthConsumerSecret()</summary>
-        </member>
-        <member name="P:TwitterAPIManager.Fakes.StubIAuthenticateSettings.tapim::TwitterAPIManager#IAuthenticateSettings#OAuthUrl">
-            <summary>Sets the stub of IAuthenticateSettings.get_OAuthUrl()</summary>
+        <member name="M:TwitterAPIManager.Fakes.StubIAuthenticate.tapim::TwitterAPIManager#IAuthenticate#AuthenticateConsumer(TwitterAPIManager.AuthenticateSettings)">
+            <summary>Sets the stub of IAuthenticate.AuthenticateConsumer(AuthenticateSettings authenticateSettings)</summary>
         </member>
         <member name="T:TwitterAPIManager.Fakes.StubITwitterFeed">
             <summary>Stub type of TwitterAPIManager.ITwitterFeed</summary>

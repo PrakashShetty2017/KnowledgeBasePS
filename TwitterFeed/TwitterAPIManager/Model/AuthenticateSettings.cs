@@ -8,7 +8,7 @@ namespace TwitterAPIManager
     /// <summary>
     /// Authentication settings model. Contains the Input needed to get access token.
     /// </summary>
-	public class AuthenticateSettings : IAuthenticateSettings
+	public class AuthenticateSettings
 	{
 		public string OAuthConsumerKey { get; set; }
 		public string OAuthConsumerSecret { get; set; }

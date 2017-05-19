@@ -6,6 +6,6 @@ namespace TwitterAPIManager
     /// </summary>
 	public interface IAuthenticate
 	{
-		AuthResponse AuthenticateConsumer(IAuthenticateSettings authenticateSettings);
+		AuthResponse AuthenticateConsumer(AuthenticateSettings authenticateSettings);
 	}
 }

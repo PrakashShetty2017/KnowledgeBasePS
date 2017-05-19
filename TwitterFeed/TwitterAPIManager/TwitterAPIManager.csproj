@@ -48,7 +48,6 @@
     <Compile Include="Model\AuthResponse.cs" />
     <Compile Include="Service\ITwitterFeed.cs" />
     <Compile Include="Service\IAuthenticate.cs" />
-    <Compile Include="Model\IAuthenticateSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\TwitterFeed.cs" />
   </ItemGroup>

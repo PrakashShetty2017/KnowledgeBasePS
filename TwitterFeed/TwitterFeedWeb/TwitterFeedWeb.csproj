@@ -61,7 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Fakes Include="Fakes\TwitterAPIManager.fakes" />
+    <None Include="Properties\PublishProfiles\localhost.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -70,21 +70,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\Images\Header-Banner.jpg" />
+    <Content Include="content\Images\Retweet-Icon.jpg" />
+    <Content Include="content\Images\Search.png" />
     <Content Include="Home.aspx" />
-    <Content Include="Default1.aspx" />
-    <Content Include="Default3.aspx" />
     <Content Include="js\jquery-1.7.2.min.js" />
     <Content Include="js\twitter-text.js" />
-    <Content Include="StyleSheet.css" />
+    <Content Include="Twitter-core.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default1.aspx.cs">
-      <DependentUpon>Default1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,6 +92,7 @@
       <Name>TwitterAPIManager</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

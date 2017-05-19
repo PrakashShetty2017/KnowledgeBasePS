@@ -1,0 +1,9 @@
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterFeedWeb\obj\Release\Fakes\tapim\b\TwitterAPIManager.Fakes.xml
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterFeedWeb\obj\Release\Fakes\tapim\b\TwitterAPIManager.Fakes.dll
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterFeedWeb\obj\Release\Fakes\tapim\b\TwitterAPIManager.Fakes.pdb
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterFeedWeb\obj\Release\Fakes\tapim\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterFeedWeb\obj\Release\Fakes\tapim\b\TwitterAPIManager.dll
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterFeedWeb\obj\Release\Fakes\tapim\b\TwitterAPIManager.pdb
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterFeedWeb\obj\Release\Fakes\tapim\o\f.csprojResolveAssemblyReference.cache
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterFeedWeb\obj\Release\Fakes\tapim\o\TwitterAPIManager.Fakes.dll
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterFeedWeb\obj\Release\Fakes\tapim\o\TwitterAPIManager.Fakes.pdb

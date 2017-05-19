@@ -36,7 +36,7 @@ namespace TwitterAPITest
         public void AuthenticateConsumerNullParameter()
         {
             //Arrange
-            IAuthenticateSettings obAuthSettings = null;
+            AuthenticateSettings obAuthSettings = null;
 
             //Act
             IAuthenticate obAuthenticate = new Authenticate();
@@ -55,7 +55,7 @@ namespace TwitterAPITest
         public void AuthenticateConsumerEmptyOAuthConsumerKey()
         {
             //Arrange
-            IAuthenticateSettings obAuthSettings = new AuthenticateSettings();
+            AuthenticateSettings obAuthSettings = new AuthenticateSettings();
             obAuthSettings.OAuthConsumerKey = string.Empty;          
 
             //Act
@@ -75,7 +75,7 @@ namespace TwitterAPITest
         public void AuthenticateConsumerNullOAuthConsumerKey()
         {
             //Arrange
-            IAuthenticateSettings obAuthSettings = new AuthenticateSettings();
+            AuthenticateSettings obAuthSettings = new AuthenticateSettings();
             obAuthSettings.OAuthConsumerKey = null;
 
             //Act
@@ -94,7 +94,7 @@ namespace TwitterAPITest
         public void AuthenticateConsumerEmptyOAuthConsumerSecret()
         {
             //Arrange
-            IAuthenticateSettings obAuthSettings = new AuthenticateSettings();
+            AuthenticateSettings obAuthSettings = new AuthenticateSettings();
             obAuthSettings.OAuthConsumerSecret = string.Empty;
 
             //Act
@@ -114,7 +114,7 @@ namespace TwitterAPITest
         public void AuthenticateConsumerNullOAuthConsumerSecret()
         {
             //Arrange
-            IAuthenticateSettings obAuthSettings = new AuthenticateSettings();
+            AuthenticateSettings obAuthSettings = new AuthenticateSettings();
             obAuthSettings.OAuthConsumerSecret = null;
 
             //Act
@@ -133,7 +133,7 @@ namespace TwitterAPITest
         public void AuthenticateConsumerEmptyOAuthUrl()
         {
             //Arrange
-            IAuthenticateSettings obAuthSettings = new AuthenticateSettings();
+            AuthenticateSettings obAuthSettings = new AuthenticateSettings();
             obAuthSettings.OAuthUrl = string.Empty;
 
             //Act
@@ -153,7 +153,7 @@ namespace TwitterAPITest
         public void AuthenticateConsumerNullOAuthUrl()
         {
             //Arrange
-            IAuthenticateSettings obAuthSettings = new AuthenticateSettings();
+            AuthenticateSettings obAuthSettings = new AuthenticateSettings();
             obAuthSettings.OAuthUrl = null;
 
             //Act
@@ -179,7 +179,7 @@ namespace TwitterAPITest
         {
             //Arrange
             //**This Key needs to be replaced in case if it has expired for any reason
-            IAuthenticateSettings obAuthSettings = new AuthenticateSettings();
+            AuthenticateSettings obAuthSettings = new AuthenticateSettings();
             obAuthSettings.OAuthConsumerKey = "DummyKey";
             obAuthSettings.OAuthConsumerSecret = "DummySecret";
             obAuthSettings.OAuthUrl = "https://api.twitter.com/oauth2/token";
@@ -202,7 +202,7 @@ namespace TwitterAPITest
         {
             //Arrange
             //**This Key needs to be replaced in case if it has expired for any reason
-            IAuthenticateSettings obAuthSettings = new AuthenticateSettings();
+            AuthenticateSettings obAuthSettings = new AuthenticateSettings();
             obAuthSettings.OAuthConsumerKey = "yEkVQqHKfqeLDiPBnGk6xtOHJ";
             obAuthSettings.OAuthConsumerSecret = "ASrjZGIQCFsBewxYYlnkKM45FHkniu0Uk8saKhZ0kloXO6d2Fy";
             obAuthSettings.OAuthUrl = "https://api.twitter.com/dummy";
@@ -227,7 +227,7 @@ namespace TwitterAPITest
         {
             //Arrange
             //**This Key needs to be replaced in case if it has expired for any reason
-            IAuthenticateSettings obAuthSettings = new AuthenticateSettings();
+            AuthenticateSettings obAuthSettings = new AuthenticateSettings();
             obAuthSettings.OAuthConsumerKey = "yEkVQqHKfqeLDiPBnGk6xtOHJ";
             obAuthSettings.OAuthConsumerSecret = "ASrjZGIQCFsBewxYYlnkKM45FHkniu0Uk8saKhZ0kloXO6d2Fy";
             obAuthSettings.OAuthUrl = "https://api.twitter.com/oauth2/token";

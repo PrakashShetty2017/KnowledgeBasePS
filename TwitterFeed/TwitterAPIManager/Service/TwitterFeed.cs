@@ -16,7 +16,7 @@ namespace TwitterAPIManager
 /// </summary>
     public  class TwitterFeed : ITwitterFeed 
     {
-        public IAuthenticateSettings AuthenticateSettings { get; set; }
+        public AuthenticateSettings AuthenticateSettings { get; set; }
     
         /// <summary>
         /// Gets the Twitter feed based on API URL pased and access token

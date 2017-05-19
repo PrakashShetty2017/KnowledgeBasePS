@@ -21,7 +21,7 @@ namespace TwitterAPIManager
         /// <param name="authenticateSettings"></param>
         /// <returns></returns>
         //Reference: "Issuing application-only requests"  https://dev.twitter.com/oauth/application-only
-        public AuthResponse AuthenticateConsumer(IAuthenticateSettings authenticateSettings)
+        public AuthResponse AuthenticateConsumer(AuthenticateSettings authenticateSettings)
 		{
             try
             {  
