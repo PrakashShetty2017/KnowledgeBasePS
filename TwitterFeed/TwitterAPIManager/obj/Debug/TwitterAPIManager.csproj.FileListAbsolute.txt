@@ -1,0 +1,6 @@
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterAPIManager\bin\Debug\TwitterAPIManager.dll.config
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterAPIManager\bin\Debug\TwitterAPIManager.dll
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterAPIManager\bin\Debug\TwitterAPIManager.pdb
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterAPIManager\obj\Debug\TwitterAPIManager.dll
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterAPIManager\obj\Debug\TwitterAPIManager.pdb
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterAPIManager\obj\Debug\TwitterAPIManager.csprojResolveAssemblyReference.cache

@@ -1,0 +1,8 @@
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterAPITest\obj\Debug\TwitterAPITest.csprojResolveAssemblyReference.cache
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterAPITest\bin\Debug\TwitterAPITest.dll
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterAPITest\bin\Debug\TwitterAPITest.pdb
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterAPITest\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterAPITest\obj\Debug\TwitterAPITest.dll
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterAPITest\obj\Debug\TwitterAPITest.pdb
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterAPITest\bin\Debug\TwitterAPIManager.dll
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterAPITest\bin\Debug\TwitterAPIManager.pdb

@@ -1,0 +1,3 @@
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterFeedWeb\Fakes\TwitterAPIManager.fakes : warning : Cannot generate shim for TwitterAPIManager.IAuthenticate: type is an interface.
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterFeedWeb\Fakes\TwitterAPIManager.fakes : warning : Cannot generate shim for TwitterAPIManager.IAuthenticateSettings: type is an interface.
+C:\KnowledgeBase\Salesforce\TwitterFeed\TwitterFeedWeb\Fakes\TwitterAPIManager.fakes : warning : Cannot generate shim for TwitterAPIManager.ITwitterFeed: type is an interface.
